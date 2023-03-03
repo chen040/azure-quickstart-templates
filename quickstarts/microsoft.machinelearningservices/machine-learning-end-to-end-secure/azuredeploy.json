@@ -101,7 +101,7 @@
   "resources": [
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('nsg-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -290,7 +290,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('vnet-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -448,7 +448,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('kv-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -637,7 +637,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('st{0}{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -957,7 +957,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('cr{0}{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -1153,7 +1153,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('appi-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -1255,7 +1255,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('mlw-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -1994,7 +1994,7 @@
     {
       "condition": "[parameters('deployJumphost')]",
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('vm-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
@@ -2194,7 +2194,7 @@
     {
       "condition": "[parameters('deployJumphost')]",
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2015-01-01",
       "name": "[format('bas-{0}-{1}-deployment', variables('name'), variables('uniqueSuffix'))]",
       "properties": {
         "expressionEvaluationOptions": {
